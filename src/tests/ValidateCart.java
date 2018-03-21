@@ -141,6 +141,9 @@ public class ValidateCart {
 		assertTrue("Error message for size not selected is incorrect", AddToCartPageObjects .errormessagesize_txt(driver).isDisplayed());
 		
 		//Select Color and Size and add to cart.
+		AddToCartPageObjects.colorRed_slct(driver).click();
+		AddToCartPageObjects.sizeMedium_slct(driver).click();
+		AccountDashboardObjects.addToCart_btn(driver).click();
 	}
 	
 
