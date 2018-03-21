@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
-	<classpathentry kind="lib" path="C:/Users/danim/Downloads/selenium-server-standalone-2.53.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/danim/Documents/selenium-2.53.0/selenium-java-2.53.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/danim/Documents/selenium-2.53.0/selenium-java-2.53.0-srcs.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/danim/Documents/commons-lang3-3.7/commons-lang3-3.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/danim/Documents/commons-lang3-3.7/commons-lang3-3.7-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/danim/Documents/commons-lang3-3.7/commons-lang3-3.7-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/danim/Documents/commons-lang3-3.7/commons-lang3-3.7-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/danim/Documents/commons-lang3-3.7/commons-lang3-3.7-test-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/danim/Downloads/selenium-server-standalone-3.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/danim/Downloads/selenium-html-runner-3.10.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
