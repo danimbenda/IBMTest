@@ -37,7 +37,7 @@ public class CreateNewCustomerAccountsObjects {
 	   */
 	  	public static WebElement email_txtfield(WebDriver driver){
 			 
-	  		webelement = driver.findElement(By.xpath("email_address"));	 
+	  		webelement = driver.findElement(By.id("email_address"));	 
 	  		return webelement;
 	  	}
 			 
