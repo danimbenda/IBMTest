@@ -121,4 +121,15 @@ public class AddToCartPageObjects {
   		listelement = driver.findElements(By.className("product-item-name"));	 
   		return listelement;
   	}
+  	
+	/**
+  	 * item added to cart success message
+  	 * @param driver
+  	 * @return
+  	 */
+  	public static WebElement itemAddedSuccessMessage_txt(WebDriver driver){
+  		
+  		webelement = driver.findElement(By.className("message-success success message"));	 
+  		return webelement;
+  	}
 }
