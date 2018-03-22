@@ -182,8 +182,7 @@ public class ValidateCart {
 		
 		CheckoutPageObjects.company_txtfield(driver).sendKeys(company);
 		CheckoutPageObjects.city_txtfield(driver).sendKeys(city);
-		CheckoutPageObjects.streetAddress_txtfield(driver).sendKeys(address);
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS) ;
+		CheckoutPageObjects.streetAddress_txtfield(driver).sendKeys(address);Thread.sleep(3000);
 		CheckoutPageObjects.state_drpdown(driver).selectByVisibleText(state);
 		CheckoutPageObjects.zipcode_txtfield(driver).sendKeys(zipcode);
 		CheckoutPageObjects.country_drpdown(driver).selectByVisibleText(country);
@@ -194,7 +193,7 @@ public class ValidateCart {
 		CheckoutPageObjects.next_btn(driver).click(); Thread.sleep(2000);
 		assertTrue("Review and payments  page title is not loaded - url is incorrect", driver.getCurrentUrl().equalsIgnoreCase("http://magento2-demo.nexcess.net/checkout/#payment"));
 		assertTrue("Beaumont Summer Kit has been added to the checkout on order summary", CheckoutPageObjects.itemListInCart_lst(driver).get(0).getAttribute("innerHTML").equalsIgnoreCase(beaumontSummitKit));
-		CheckoutPageObjects.placeOrder_btn(driver).click();Thread.sleep(2000);
+		CheckoutPageObjects.placeOrder_btn(driver).click();Thread.sleep(5000);
 		assertTrue("Success order placed page is not open - url is incorrect", driver.getCurrentUrl().equalsIgnoreCase("http://magento2-demo.nexcess.net/checkout/onepage/success/"));
 		assertTrue("Success message for order created not found", CheckoutPageObjects.checkoutSuccessMessagess_lst(driver).get(0).findElements(By.tagName("p")).get(0).getText().contains("Your order number is"));
 		
