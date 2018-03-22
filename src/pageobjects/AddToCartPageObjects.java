@@ -1,5 +1,7 @@
 package pageobjects;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,6 +9,7 @@ import org.openqa.selenium.WebElement;
 public class AddToCartPageObjects {
 	
 	private static WebElement webelement = null;
+	private static List <WebElement> listelement = null;
 
 	/**
   	 * Error message for color not selected
@@ -61,5 +64,61 @@ public class AddToCartPageObjects {
   		
   		webelement = driver.findElement(By.xpath("//*[@id='product-options-wrapper']/div/div/div[2]/div/div[3]"));	 
   		return webelement;
+  	}
+  	
+  	/**
+  	 * Cart Link
+  	 * @param driver
+  	 * @return
+  	 */
+  	public static WebElement minicart_lnk(WebDriver driver){
+  		
+  		webelement = driver.findElement(By.xpath("/html/body/div[1]/header/div[2]/div[1]/a"));	 
+  		return webelement;
+  	}
+  	
+  
+
+  	/**
+  	 * View and Edit Cart Link
+  	 * @param driver
+  	 * @return
+  	 */
+  	public static WebElement viewAndEditCart_lnk(WebDriver driver){
+  		
+  		webelement = driver.findElement(By.xpath("//*[@id='minicart-content-wrapper']/div[2]/div[5]/div/a/span/span"));	 
+  		return webelement;
+  	} 
+  	/**
+  	 * item in the cart
+  	 * @param driver
+  	 * @return
+  	 */
+  	public static WebElement itemInMiniCart_lnk(WebDriver driver){
+  		
+  		webelement = driver.findElement(By.xpath("//*[@id='mini-cart']/li[1]/div/div"));	 
+  		return webelement;
+  	}
+  	
+ 	/**
+  	 * Page title class
+  	 * @param driver
+  	 * @return
+  	 */
+  	public static WebElement classpagetitle_txt(WebDriver driver){
+  		
+  		webelement = driver.findElement(By.className("page-title"));	 
+  		return webelement;
+  	}
+  	
+  	/**
+  	 * List of items in the mini cart
+  	 * @param driver
+  	 * @return
+  	 */
+  	public static List< WebElement> itemListInCart_lst(WebDriver driver){
+  		
+  		listelement = driver.findElements(By.className("product-item-name"));	 
+  		return listelement;
   	}
 }

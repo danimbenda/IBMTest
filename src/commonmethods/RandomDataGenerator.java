@@ -39,6 +39,10 @@ public class RandomDataGenerator {
 
     }
     
+    /**
+     * This method generates random password with lowercase, uppercase, digits, and special characters
+     * @return 
+     */
     public static String generateRandomPassword(){
         StringBuffer randPass = new StringBuffer();
         char ch;
